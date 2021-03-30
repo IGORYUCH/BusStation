@@ -1,0 +1,20 @@
+﻿<Window x:Name="___Без_имени_" x:Class="BusStation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BusStation"
+        mc:Ignorable="d"
+        Title="Информационная система автовокзала" Height="351.305" Width="462.794">
+    <Grid>
+        <GroupBox Header="Главное Меню" Height="262" Margin="129,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="197">
+            <Grid Margin="-4,0,-3,-4">
+                <Button x:Name="ShowAllRoutersButton" Content="Отобразить маршруты" Margin="29,10,29,0" VerticalAlignment="Top" Height="25" Click="ShowAllRoutersButton_Click"/>
+                <Button x:Name="FilterSettingsButton" Content="Настройки фильтрации" HorizontalAlignment="Left" Margin="29,49,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="FilterSettingsButton_Click"/>
+                <Button x:Name="ShowFavoriteButton" Content="Просмотр избранного" HorizontalAlignment="Left" Margin="29,88,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ShowFavoriteButton_Click"/>
+                <Button x:Name="ChangeFavoriteButton" Content="Изменить избранное" HorizontalAlignment="Left" Margin="29,127,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ChangeFavoriteButton_Click"/>
+                <Button x:Name="ExitButton" Content="Выход" HorizontalAlignment="Left" Margin="29,177,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="ExitButton_Click"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

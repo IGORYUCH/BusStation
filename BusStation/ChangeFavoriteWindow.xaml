@@ -1,0 +1,19 @@
+﻿<Window x:Class="BusStation.ChangeFavoriteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BusStation"
+        mc:Ignorable="d"
+        Title="Изменить избранное" Height="188.063" Width="342.813">
+    <Grid>
+        <Button x:Name="CancelButton" Content="Отмена" HorizontalAlignment="Left" Margin="250,122,0,0" VerticalAlignment="Top" Width="75" Height="25" RenderTransformOrigin="0.756,0.48" Click="CancelButton_Click"/>
+        <Button x:Name="ClearButton" Content="Удалить" HorizontalAlignment="Left" Margin="158,122,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ClearButton_Click"/>
+        <Button x:Name="AddButton" Content="Добавить" HorizontalAlignment="Left" Margin="78,122,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="AddButton_Click"/>
+        <Label Content="Номер маршрута" HorizontalAlignment="Left" Margin="22,31,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номар автобуса" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RouteNumberBox" HorizontalAlignment="Left" Height="23" Margin="133,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="BusNumberBox" HorizontalAlignment="Left" Height="23" Margin="133,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
