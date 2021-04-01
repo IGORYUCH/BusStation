@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Информационная система автовокзала" Height="351.305" Width="462.794">
     <Grid>
-        <GroupBox Header="Главное Меню" Height="262" Margin="129,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="197">
+        <GroupBox Header="Главное меню" Height="262" Margin="129,21,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="197">
             <Grid Margin="-4,0,-3,-4">
                 <Button x:Name="ShowAllRoutersButton" Content="Отобразить маршруты" Margin="29,10,29,0" VerticalAlignment="Top" Height="25" Click="ShowAllRoutersButton_Click"/>
                 <Button x:Name="FilterSettingsButton" Content="Настройки фильтрации" HorizontalAlignment="Left" Margin="29,49,0,0" VerticalAlignment="Top" Width="134" Height="25" Click="FilterSettingsButton_Click"/>

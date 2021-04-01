@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BusStation"
         mc:Ignorable="d"
-        Title="ShowRoutesWindow" Height="320.757" Width="649.608">
+        Title="Показать маршруты" Height="320.757" Width="649.608">
     <Grid>
-        <DataGrid x:Name="RoutesDataGrid" IsReadOnly="True">
+        <DataGrid x:Name="RoutesDataGrid" IsReadOnly="True" AutoGenerateColumns="False" HorizontalGridLinesBrush="#FFCDCDCD" VerticalGridLinesBrush="#FFCDCDCD">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="№ маршрута" Binding="{Binding Path=full_name}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="№ автобуса"  Binding="{Binding Path=status}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Время отправления"  Binding="{Binding Path=post}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Место отправления"  Binding="{Binding Path=department}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Место прибытия" Binding="{Binding Path=employee_date}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="№ маршрута" Binding="{Binding Path=Number}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="№ автобусов"  Binding="{Binding Path=busNumbers}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Время отправления"  Binding="{Binding Path=departureTime}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Место отправления"  Binding="{Binding Path=departurePlace}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Место прибытия" Binding="{Binding Path=destinationPlace}" Width="*"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
 

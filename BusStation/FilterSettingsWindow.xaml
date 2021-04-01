@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Изменить настройки фильтрации" Height="188.063" Width="342.813">
     <Grid>
-        <Label Content="Маршрут" HorizontalAlignment="Left" Margin="20,28,0,0" VerticalAlignment="Top"/>
-        <Label Content="Номер автобуса" HorizontalAlignment="Left" Margin="20,56,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер маршрута" HorizontalAlignment="Left" Margin="18,28,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер автобуса" HorizontalAlignment="Left" Margin="18,56,0,0" VerticalAlignment="Top"/>
         <Button x:Name="ApplyButton" Content="Применить" HorizontalAlignment="Left" Margin="71,122,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ApplyButton_Click"/>
-        <TextBox Height="23" Margin="123,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="123,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="RouteNumberBox" Height="23" Margin="123,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <TextBox x:Name="BusNumberBox" HorizontalAlignment="Left" Height="23" Margin="123,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="ClearButton" Content="Очистить" HorizontalAlignment="Left" Margin="151,122,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="ClearButton_Click"/>
         <Button x:Name="CancelButton" Content="Отмена" HorizontalAlignment="Left" Margin="250,122,0,0" VerticalAlignment="Top" Width="75" Height="25" RenderTransformOrigin="0.756,0.48" Click="CancelButton_Click"/>
 

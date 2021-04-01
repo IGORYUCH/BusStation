@@ -23,3 +23,7 @@ C:\Users\beasty\source\repos\BusStation\BusStation\obj\Debug\FilterSettingsWindo
 C:\Users\beasty\source\repos\BusStation\BusStation\obj\Debug\ShowFavoriteWindow.baml
 C:\Users\beasty\source\repos\BusStation\BusStation\obj\Debug\ShowRoutesWindow.g.cs
 C:\Users\beasty\source\repos\BusStation\BusStation\obj\Debug\ShowRoutesWindow.baml
+C:\Users\beasty\source\repos\BusStation\BusStation\bin\Debug\System.Data.SQLite.dll
+C:\Users\beasty\source\repos\BusStation\BusStation\bin\Debug\System.Data.SQLite.xml
+C:\Users\beasty\source\repos\BusStation\BusStation\obj\Debug\BusStation.csproj.CopyComplete
+C:\Users\beasty\source\repos\BusStation\BusStation\bin\Debug\bus_station.db

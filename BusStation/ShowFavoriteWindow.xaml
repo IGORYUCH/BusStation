@@ -5,17 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BusStation"
         mc:Ignorable="d"
-        Title="ShowFavoriteWindow" Height="320.757" Width="649.608">
-    <Grid>
-        <DataGrid x:Name="RoutesDataGrid" IsReadOnly="True">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="№ маршрута" Binding="{Binding Path=full_name}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="№ автобуса"  Binding="{Binding Path=status}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Время отправления"  Binding="{Binding Path=post}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Место отправления"  Binding="{Binding Path=department}" Width="*"></DataGridTextColumn>
-                <DataGridTextColumn Header="Место прибытия" Binding="{Binding Path=employee_date}" Width="*"></DataGridTextColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-
+        Title="Показать избранное" Height="405.0" Width="655.47">
+    <Grid Margin="0,0,0,1">
+        <GroupBox Header="Избранные маршруты" Height="178" VerticalAlignment="Top">
+            <Grid Margin="-1,0,-1,-1">
+                <DataGrid x:Name="FavoriteRoutesDataGrid" IsReadOnly="True" AutoGenerateColumns="False" HorizontalGridLinesBrush="#FFCDCDCD" VerticalGridLinesBrush="#FFCDCDCD">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="№ маршрута" Binding="{Binding Number}" Width="*"/>
+                        <DataGridTextColumn Header="№ автобусов"  Binding="{Binding busNumbers}" Width="*"/>
+                        <DataGridTextColumn Header="Время отправления"  Binding="{Binding departureTime}" Width="*"/>
+                        <DataGridTextColumn Header="Место отправления"  Binding="{Binding departurePlace}" Width="*"/>
+                        <DataGridTextColumn Header="Место прибытия" Binding="{Binding destinationPlace}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Избранные автобусы" Height="181" Margin="0,183,0,0" VerticalAlignment="Top">
+            <Grid Margin="0,0,-2,-2">
+                <DataGrid x:Name="FavoriteBusesDataGrid"  IsReadOnly="True" AutoGenerateColumns="False" HorizontalGridLinesBrush="#FFCDCDCD" VerticalGridLinesBrush="#FFCDCDCD">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="№ автобуса" Binding="{Binding busNumber}" Width="*"/>
+                        <DataGridTextColumn Header="№ маршрута"  Binding="{Binding routeNumber}" Width="*"/>
+                        <DataGridTextColumn Header="Вместимость"  Binding="{Binding capacity}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

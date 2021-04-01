@@ -9,11 +9,11 @@
     <Grid>
         <GroupBox Header="Авторизация" Margin="110,91,0,0" Height="137" VerticalAlignment="Top" HorizontalAlignment="Left" Width="234">
             <Grid Margin="0,0,-2,-3">
-                <TextBox x:Name="LoginBox" Margin="94,10,10,84" TextWrapping="Wrap" Text="admin"/>
-                <TextBox x:Name="PasswordBox" Margin="94,38,10,56" TextWrapping="Wrap" Text="admin"/>
+                <TextBox x:Name="LoginBox" Margin="94,10,10,84" TextWrapping="Wrap"/>
                 <Button x:Name="AuthorisationButton" Content="Войти" Margin="94,72,10,22" Click="AuthorisationButton_Click"/>
                 <Label Content="Логин" HorizontalAlignment="Left" Margin="35,9,0,0" VerticalAlignment="Top"/>
                 <Label Content="Пароль" HorizontalAlignment="Left" Margin="35,37,0,0" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="94,40,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
             </Grid>
         </GroupBox>
 
